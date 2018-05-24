@@ -1,5 +1,5 @@
 ### TUBE-RESONATOR
-Tube resonator project for raspberry pi. Finds, through the Alvin Lucier "I am sitting in a room" technique, the resonant frequencies of a given tube.
+Tube resonator project for raspberry pi. Finds, through the Alvin Lucier "I am sitting in a room" technique, the resonant frequencies of a given tube and plays them back through a sound that is convolved with the ambient tone of a given space.
 
 ### SET UP
 
