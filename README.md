@@ -3,13 +3,17 @@ Tube resonator project for raspberry pi. Finds, through the Alvin Lucier "I am s
 
 ### SET UP
 
-Download and install puredata with `apt-get install puredata`
+Plug 1/8 inch audio out the the raspberry pi into speaker/amplifier.
+
+From computer `ssh pi@raspberrypi.local` and download and install puredata with `apt-get install puredata`
+
+Run `exit` when signed into the pi to sign out.
 
 Copy the TUBERESONATOR.pd patch from your computer to your raspberry pi with 
 `scp /path/to/TUBERESONATOR.pd pi@raspberrypi.local:/home/pi/TUBERESONATOR.pd`
 Make sure you are on the same wifi network as your pi. You will be propted to enter your pi's password.
 
-Plug in usb-microphone to the raspberry pi, reboot, SSH into your pi with `ssh pi@raspberrypi.local`, and run `cat /proc/asound/cards` in the command line to find your microphones device number.
+Plug in usb-microphone to the raspberry pi, reboot, SSH into your pi with `ssh pi@raspberrypi.local`, and run `cat /proc/asound/cards` in the command line to find your microphones device number. Make sure microphone is places near speaker for effect to work.
 
 Run `sudo nano /etc/asound.conf` and set the default sound device to that of the microphone by replacing the audio device number with the device number of the microphone noted from above.
 
